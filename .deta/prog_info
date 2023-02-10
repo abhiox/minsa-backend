@@ -1,0 +1,1 @@
+{"id":"c4c3e669-e3f5-49b9-a61a-66f4eb13176e","space":52001,"runtime":"nodejs14.x","name":"MINSA-backend-2","path":"q49zaw","project":"d0mxkb0j","account":"144798365827","region":"ap-south-1","deps":["express@^4.18.2","socket.io@^4.6.0","cors@^2.8.5"],"envs":null,"public":true,"log_level":"debug","cron":""}
