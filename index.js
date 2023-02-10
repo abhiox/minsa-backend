@@ -1,16 +1,16 @@
 const express = require("express");
-var cors = require('cors');
+// var cors = require('cors');
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, { /* options */ });
-app.use(cors())
+// app.use(cors())
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
 
 io.on("connection", (socket) => {
   // with every request, there should a unit, passcode, loginAs received by server
@@ -49,4 +49,4 @@ httpServer.listen(PORT, () => {
   console.log(`server started at port ${PORT}`);
 });
 
-module.exports = app;
+// module.exports = app;
